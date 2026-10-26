@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saasflix HTML Landing Page</title>
+    <link rel="icon" href="./Images/Main-Cover-img-Logo/title-logo.png">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Font Awesome Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Box Icons Links -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap Css Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Bootstrap JS Links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- My Css Links -->
+    <link rel="stylesheet" href="./sass/main.css">
+
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class='bx bx-chevron-up fs-2'></i></button>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white text-black px-0 py-3 navbar-sticky">
+        <div class="container-xl">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="./Images/Main-Cover-img-Logo/logo-navbar-img.png" class="h-8" alt="Mike" />
+            </a>
+            <!-- Navbar toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <!-- Nav -->
+                <div class="navbar-nav mx-lg-auto">
+                    <a class="nav-item nav-link active" href="#home" aria-current="page">Home</a>
+                    <a class="nav-item nav-link" href="#features">Features</a>
+                    <a class="nav-item nav-link" href="#plans">Plans</a>
+                    <a class="nav-item nav-link" href="#faq">FAQ</a>
+                    <a class="nav-item nav-link" href="#blog">Blog</a>
+                    <a class="nav-item nav-link" href="#contact">Contact</a>
+                </div>
+                <!-- Action -->
+                <div class="d-flex align-items-lg-center mt-3 mt-lg-0">
+                    <button type="button" class="outlines-btns w-full w-lg-auto">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-cover-img" id="home">
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="all-main-text-color fw-bold">A premium web app design <br> for your website</h1>
+                    <p class="all-paragraph-text-color mt-4 w-25 m-auto media-width">here are many variations of
+                        passages of
+                        lorem ipsum available but the majority have suffered alteration in some form.</p>
+
+                    <div class="mt-5">
+                        <button type="button" class="themes-btns">Get Started</button>
+                    </div>
+
+                    <img src="./Images/Main-Cover-img-Logo/hero-img2.png" class="main-cover-img-2 mt-5" alt="Mike" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-5 bg-white spacer-100"></div>
+
+    <div class="container-fluid p-5 bg-white text-black" id="features">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-6 col-xxl-4">
+                <h1 class="all-text-color fw-bold">Your saas web app with just a few clicks</h1>
+                <p class="mt-4 all-paragraph-text-color">There are many variations of passages of lor ipsum
+                    available but the majority have suffered alteration in some form by injected humour.</p>
+                <p class="mt-4 all-paragraph-text-color">All the Lorem Ipsum generators on the Internet tend to
+                    repeat predefined chunks as necessary.</p>
+
+                <button type="button" class="themes-screens-btns mt-5">Discover</button>
+            </div>
+
+            <div class="col-12 col-lg-6 col-xxl-4 media-margin-top">
+                <img src="./Images/features-img/features-img-1.png" class="features-img-1" alt="Mike" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5 media-margin-top bg-white text-black" id="features">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-6 col-xxl-4">
+                <img src="./Images/features-img/features-img-2.png" class="features-img-1" alt="Mike" />
+            </div>
+
+            <div class="col-12 col-lg-6 col-xxl-4 media-margin-top">
+                <h1 class="all-text-color fw-bold">Your saas web app with just a few clicks</h1>
+                <p class="mt-4 all-paragraph-text-color">There are many variations of passages of lor ipsum
+                    available but the majority have suffered alteration in some form by injected humour.</p>
+                <p class="mt-4 all-paragraph-text-color">All the Lorem Ipsum generators on the Internet tend to
+                    repeat predefined chunks as necessary.</p>
+
+                <button type="button" class="themes-screens-btns mt-5">Discover</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5 media-margin-top bg-white text-black" id="features">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-6 col-xxl-4">
+                <h1 class="all-text-color">Your saas web app with just a few clicks</h1>
+                <p class="mt-4 all-paragraph-text-color">There are many variations of passages of lor ipsum
+                    available but the majority have suffered alteration in some form by injected humour.</p>
+                <p class="mt-4 all-paragraph-text-color">All the Lorem Ipsum generators on the Internet tend to
+                    repeat predefined chunks as necessary.</p>
+
+                <button type="button" class="themes-screens-btns mt-5">Discover</button>
+            </div>
+
+            <div class="col-12 col-lg-6 col-xxl-4 media-margin-top">
+                <img src="./Images/features-img/features-img-3.png" class="features-img-1" alt="Mike" />
+            </div>
+        </div>
+    </div>
+
+    <div class="features-cover-img" id="features">
+        <div class="container-fluid p-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-4 col-xxl-3 d-flex justify-content-center">
+                    <div class="bg-white text-black text-center p-5 features-main-card">
+                        <img src="./Images/features-img/features-card-img-logo-1.png" class="features-card-logo-img"
+                            alt="Mike" />
+                        <h1 class="mt-5">Saasflix</h1>
+                        <h3 class="mt-4 all-paragraph-text-color">Implement</h3>
+                        <p class="mt-4 mb-4 all-paragraph-text-color">There are many variations of passages of
+                            lorem ipsum dolor amet available.</p>
+                        <a href="#" class="fs-5 all-text-color fw-semibold features-card-link-hover">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-xxl-3 d-flex justify-content-center media-margin-top">
+                    <div class="bg-white text-black text-center p-5 features-main-card">
+                        <img src="./Images/features-img/features-card-img-logo-2.png" class="features-card-logo-img"
+                            alt="Mike" />
+                        <h1 class="mt-5">Saasflix</h1>
+                        <h3 class="mt-4 all-paragraph-text-color">secure</h3>
+                        <p class="mt-4 mb-4 all-paragraph-text-color">There are many variations of passages of
+                            lorem
+                            ipsum dolor amet available.</p>
+                        <a href="#" class="fs-5 all-text-color fw-semibold features-card-link-hover">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-xxl-3 d-flex justify-content-center media-margin-top">
+                    <div class="bg-white text-black text-center p-5 features-main-card">
+                        <img src="./Images/features-img/features-card-img-logo-3.png" class="features-card-logo-img"
+                            alt="Mike" />
+                        <h1 class="mt-5">Saasflix</h1>
+                        <h3 class="mt-4 all-paragraph-text-color">Automate</h3>
+                        <p class="mt-4 mb-4 all-paragraph-text-color">There are many variations of passages of
+                            lorem
+                            ipsum dolor amet available..</p>
+                        <a href="#" class="fs-5 all-text-color fw-semibold features-card-link-hover">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5 bg-white text-black" id="features">
+        <div class="row">
+            <div class="col">
+                <h1 class="all-main-text-color text-center">Why is Saasflix different?</h1>
+            </div>
+        </div>
+
+        <div class="row mt-5 pt-5 justify-content-center">
+            <div class="col-12 col-lg-6 col-xxl-4 d-flex justify-content-center flex-column">
+                <div class="d-flex align-items-center">
+                    <div class="why-is-bg-light-screen">
+                        <div class="why-is-bg-screen">
+                            <i class='bx bxs-user-check fs-3'></i>
+                        </div>
+                    </div>
+
+                    <div class="ms-3">
+                        <h3 class="all-main-text-color">Developer-first coding</h3>
+                        <p class="all-paragraph-text-color mb-0">There are many variations of passages of lorem
+                            available.</p>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center mt-5">
+                    <div class="why-is-bg-light-screen">
+                        <div class="why-is-bg-screen">
+                            <i class='bx bxs-envelope fs-3'></i>
+                        </div>
+                    </div>
+
+                    <div class="ms-3">
+                        <h3 class="all-main-text-color">Leading incremental databaseg</h3>
+                        <p class="all-paragraph-text-color mb-0">Nemo enim ipsam voluptatem quia voluptas sit.</p>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center mt-5">
+                    <div class="why-is-bg-light-screen">
+                        <div class="why-is-bg-screen">
+                            <i class='bx bxs-truck fs-3'></i>
+                        </div>
+                    </div>
+
+                    <div class="ms-3">
+                        <h3 class="all-main-text-color">Automated work flow</h3>
+                        <p class="all-paragraph-text-color mb-0">Similique sunt in culpa qui officia deserunt
+                            mollitia animi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 col-xxl-4 media-margin-top">
+                <div class="why-is-img-position">
+                    <img src="./Images/features-img/video-bg.jpg" class="why-is-video-bg-img" alt="Mike" />
+
+                    <div class="why-is-img-absolute">
+                        <div class="why-is-video-bg-img-border">
+                            <i class='bx bx-play fs-1 text-white'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="plan-cover-img" id="plans">
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="all-main-text-color">Plans and pricing</h1>
+                    <p class="all-paragraph-text-color">Our pricing scales with you and your needs. Try it for
+                        free. No credit card required.</p>
+                </div>
+            </div>
+
+            <div class="row mt-5 justify-content-center">
+                <div class="col-12 col-lg-4 col-xxl-3 d-flex justify-content-center media-flex-center">
+                    <div class="plan-card-1 text-center">
+                        <img src="./Images/plans-img/ptable-icon1.png" class="plan-card-img" alt="Mike" />
+                        <h1 class="all-main-text-color mt-5">Developer</h1>
+                        <h1 class="all-text-color display-5 mt-5"><sub class="plan-card-sub">$</sub>49</h1>
+                        <p class="all-paragraph-text-color">per user /mo</p>
+                        <button type="button" class="themes-screens-btns mt-5">Signup for free</button>
+                        <h3 class="all-text-color mt-5">Free Forever</h3>
+                        <ul class="all-paragraph-text-color fs-5 mt-5 ps-0">
+                            <li class="list-group">No credit card required</li>
+                            <li class="list-group">Unlimited team members</li>
+                            <li class="list-group">Unlimited cloud space</li>
+                            <li class="list-group">3 months of record history</li>
+                            <li class="list-group">Custom user interface</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-xxl-3 d-flex justify-content-center media-flex-center media-margin-top">
+                    <div class="plan-card-2 text-center">
+                        <div class="plan-card-2-popular">
+                            <h5 class="all-text-color">Most Popular</h5>
+                        </div>
+                        <img src="./Images/plans-img/ptable-icon2.png" class="plan-card-img" alt="Mike" />
+                        <h1 class="text-white mt-5">Professional</h1>
+                        <h1 class="all-text-color display-5 mt-5"><sub class="plan-card-sub">$</sub>99</h1>
+                        <p class="text-white">per user /mo</p>
+                        <button type="button" class="outlines-btns border-0 mt-5">Signup for free</button>
+                        <h3 class="all-text-color mt-5">Free Forever</h3>
+                        <ul class="all-paragraph-text-color fs-5 mt-5 ps-0">
+                            <li class="list-group">No credit card required</li>
+                            <li class="list-group">Unlimited team members</li>
+                            <li class="list-group">Unlimited cloud space</li>
+                            <li class="list-group">6 months of record history</li>
+                            <li class="list-group">Custom user interface</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-xxl-3 d-flex justify-content-center media-flex-center media-margin-top">
+                    <div class="plan-card-1 text-center">
+                        <img src="./Images/plans-img/ptable-icon3.png" class="plan-card-img" alt="Mike" />
+                        <h1 class="all-main-text-color mt-5">Premium</h1>
+                        <h1 class="all-text-color display-5 mt-5"><sub class="plan-card-sub">$</sub>199</h1>
+                        <p class="all-paragraph-text-color">per user /mo</p>
+                        <button type="button" class="themes-screens-btns mt-5">Signup for free</button>
+                        <h3 class="all-text-color mt-5">Free Forever</h3>
+                        <ul class="all-paragraph-text-color fs-5 mt-5 ps-0">
+                            <li class="list-group">No credit card required</li>
+                            <li class="list-group">Unlimited team members</li>
+                            <li class="list-group">Unlimited cloud space</li>
+                            <li class="list-group">12 months of record history</li>
+                            <li class="list-group">Custom user interface</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5 bg-white text-black" id="faq">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="all-text-color">Frequently asked questions</h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5 pt-5">
+            <div class="col-12 col-lg-6 col-xxl-4">
+                <div class="d-flex">
+                    <i class='bx bxs-help-circle fs-2 all-text-color'></i>
+                    <div class="ms-3">
+                        <h4 class="fw-bold">Can I integrate my enterprise software with Saasflix?</h4>
+                        <p class="all-paragraph-text-color mb-0 mt-2">There are many variations of passages of
+                            Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
+                            humour.</p>
+                    </div>
+                </div>
+
+                <div class="d-flex mt-5 pt-4">
+                    <i class='bx bxs-help-circle fs-2 all-text-color'></i>
+                    <div class="ms-3">
+                        <h4 class="fw-bold">If I invite my suppliers or customers to Saasflix, do I have to pay for their accounts?</h4>
+                        <p class="all-paragraph-text-color mb-0 mt-2">It was popularised in the 1960s with the
+                            release of Letraset sheets containing Lorem Ipsum passages.</p>
+                    </div>
+                </div>
+
+                <div class="d-flex mt-5 pt-4">
+                    <i class='bx bxs-help-circle fs-2 all-text-color'></i>
+                    <div class="ms-3">
+                        <h4 class="fw-bold">What perks do I get for prepaying my subscription?</h4>
+                        <p class="all-paragraph-text-color mb-0 mt-2">Nam libero tempore, cum soluta nobis est
+                            eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 col-xxl-4 media-margin-top">
+                <div class="d-flex">
+                    <i class='bx bxs-help-circle fs-2 all-text-color'></i>
+                    <div class="ms-3">
+                        <h4 class="fw-bold">Can I install Saasflix on my own hardware?</h4>
+                        <p class="all-paragraph-text-color mb-0 mt-2">Sed ut perspiciatis unde omnis iste natus
+                            error sit voluptatem accusantium doloremque.</p>
+                    </div>
+                </div>
+
+                <div class="d-flex mt-5 pt-4">
+                    <i class='bx bxs-help-circle fs-2 all-text-color'></i>
+                    <div class="ms-3">
+                        <h4 class="fw-bold">How can I obtain a copy of my data?</h4>
+                        <p class="all-paragraph-text-color mb-0 mt-2">There are many variations of passages of
+                            Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
+                            humour.</p>
+                    </div>
+                </div>
+
+                <div class="d-flex mt-5 pt-4">
+                    <i class='bx bxs-help-circle fs-2 all-text-color'></i>
+                    <div class="ms-3">
+                        <h4 class="fw-bold">How safe is my data?</h4>
+                        <p class="all-paragraph-text-color mb-0 mt-2">Nor again is there anyone who loves or
+                            pursues or desires to obtain pain of itself, because it is pain, but because occasionally
+                            circumstances occur in which toil and pain can procure him some great pleasure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-card-bg mt-5 pt-5" id="faq">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-lg-6">
+                    <img src="./Images/plans-img/faq-img.png" class="faq-card-img" alt="Mike" />
+                </div>
+
+                <div class="col-12 col-lg-6 text-center media-margin-top">
+                    <h1 class="all-text-color">Get started with Saasflix</h1>
+                    <p class="all-paragraph-text-color mt-5">Access our guide and discover everything your
+                        company needs to become compliant.</p>
+                    <button class="themes-screens-btns mt-5">Book a demo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="team-cover-img" id="faq">
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class="col">
+                    <h1 class="all-main-text-color text-center">Our Team</h1>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-5 pt-5">
+                <div class="col-12 col-lg-4 col-xxl-3 d-flex justify-content-center media-flex-center">
+                    <div class="team-main-card">
+                        <img src="./Images/team-img/member-1.jpg" alt="Mike" />
+                        <div class="team-card-text p-5 mt-5 text-center">
+                            <h3 class="all-main-text-color">David Cottrell</h3>
+                            <p class="mb-0 mt-3">Project Lead</p>
+                            <p class="mb-0">SaaS Applications</p>
+                        </div>
+
+                        <div class="team-card-icons">
+                            <i class='bx bxl-twitter fs-4 text-white'></i>
+                            <i class='bx bxl-google fs-4 text-white ms-3'></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-xxl-3 d-flex justify-content-center media-flex-center media-margin-top">
+                    <div class="team-main-card">
+                        <img src="./Images/team-img/member-2.jpg" alt="Mike" />
+                        <div class="team-card-text p-5 mt-5 text-center">
+                            <h3 class="all-main-text-color">Anton McKay</h3>
+                            <p class="mb-0 mt-3">Web Developer</p>
+                            <p class="mb-0">Saasflix Web Pro Apps</p>
+                        </div>
+
+                        <div class="team-card-icons">
+                            <i class='bx bxl-twitter fs-4 text-white'></i>
+                            <i class='bx bxl-google fs-4 text-white ms-3'></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-xxl-3 d-flex justify-content-center media-flex-center media-margin-top">
+                    <div class="team-main-card">
+                        <img src="./Images/team-img/member-3.jpg" alt="Mike" />
+                        <div class="team-card-text p-5 mt-5 text-center">
+                            <h3 class="all-main-text-color">Danny Stanton</h3>
+                            <p class="mb-0 mt-3">Design Lead</p>
+                            <p class="mb-0">Adobe Suite Expert</p>
+                        </div>
+
+                        <div class="team-card-icons">
+                            <i class='bx bxl-twitter fs-4 text-white'></i>
+                            <i class='bx bxl-google fs-4 text-white ms-3'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5 bg-white text-black" id="faq">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="all-main-text-color">How it works?</h1>
+                <p class="all-paragraph-text-color">Just 3 simple steps to start using Saasflix..</p>
+            </div>
+        </div>
+
+        <div class="d-flex align-items-start justify-content-center mt-5 pt-5 flex-direction">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                    aria-selected="true">
+                    <h3 class="text-start fw-bold">Create your tasks</h3>
+                    <p class="all-paragraph-text-color mt-3 text-start">There are many variations of passages of
+                        lorem ipsum dolor <br /> amet available.</p>
+                </button>
+                <button class="nav-link mt-5" id="v-pills-profile-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                    aria-selected="false">
+                    <h3 class="text-start fw-bold">Build your flow</h3>
+                    <p class="all-paragraph-text-color mt-3 text-start">There are many variations of passages of
+                        lorem ipsum dolor <br /> amet available.</p>
+                </button>
+                <button class="nav-link mt-5" id="v-pills-disabled-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled"
+                    aria-selected="false">
+                    <h3 class="text-start fw-bold">Aquire new users</h3>
+                    <p class="all-paragraph-text-color mt-3 text-start">There are many variations of passages of
+                        lorem ipsum dolor <br /> amet available.</p>
+                </button>
+            </div>
+            <div class="tab-content media-margin-top" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                    aria-labelledby="v-pills-home-tab" tabindex="0">
+                    <img src="./Images/features-img/features-img-1.png" class="features-img-1" alt="Mike" />
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
+                    tabindex="0">
+                    <img src="./Images/features-img/features-img-2.png" class="features-img-1" alt="Mike" />
+                </div>
+                <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab"
+                    tabindex="0">
+                    <img src="./Images/features-img/features-img-3.png" class="features-img-1" alt="Mike" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5 swiper-bg" id="faq">
+        <div class="row">
+            <div class="col">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="container-fluid p-5">
+                                <div class="row">
+                                    <div class="col">
+                                        <i class='bx bxs-quote-alt-right fs-1'></i>
+                                        <h1 class="mt-5 text-white">Saasflix app platform is incredibly
+                                            simple to use <br> and trustworthy</h1>
+                                        <h4 class="fw-bold mt-5 text-white">Steven Gray</h4>
+                                        <p class="mt-2 mb-5">Entrepreneur, LA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container-fluid p-5">
+                                <div class="row">
+                                    <div class="col">
+                                        <i class='bx bxs-quote-alt-right fs-1'></i>
+                                        <h1 class="mt-5 text-white">Giving a five star review was
+                                            the easiest thing <br /> I've done in a while.</h1>
+                                        <h4 class="fw-bold mt-5 text-white">Christian Brown</h4>
+                                        <p class="mt-2 mb-5">Project Admin, NY</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container-fluid p-5">
+                                <div class="row">
+                                    <div class="col">
+                                        <i class='bx bxs-quote-alt-right fs-1'></i>
+                                        <h1 class="mt-5 text-white">I am using Saasflix app for more than 25 years.</h1>
+                                        <h4 class="fw-bold mt-5 text-white">Martha Weiner</h4>
+                                        <p class="mt-2 mb-5">Web Developer, Ohio</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog-main-cover-img" id="blog">
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class="col">
+                    <h1 class="all-main-text-color text-center">From the blog</h1>
+                </div>
+            </div>
+
+            <div class="row mt-5 pt-5 justify-content-center">
+                <div class="col-12 col-lg-4 col-xxl-3 d-flex justify-content-center media-flex-center">
+                    <div class="blog-card">
+                        <img src="./Images/blog-img/post-img1.jpg" class="blog-card-img" alt="Mike" />
+                        <div class="bolg-card-text p-5">
+                            <h5 class="all-text-color">MEDIA COVERAGE</h5>
+                            <hr class="blog-card-hr">
+                            <h4 class="fw-bold">How to use saas to create a positive work</h4>
+                            <p class="all-paragraph-text-color mt-3">There are many variations of passages of lorem
+                                ipsum dolor amet available...</p>
+                            <div class="d-flex mt-5 justify-content-end">
+                                <a href="#" class="fs-5 text-black fw-semibold features-card-link-hover">Continue
+                                    Reading</a>
+                                <i class='bx bx-dots-horizontal-rounded fs-3 mt-3 all-text-color'></i>
+                            </div>
+                        </div>
+                    </div>
+                    </di>
+                </div>
+
+                <div class="col-12 col-lg-4 col-xxl-3 d-flex justify-content-center media-flex-center media-margin-top">
+                    <div class="blog-card">
+                        <img src="./Images/blog-img/post-img2.jpg" class="blog-card-img" alt="Mike" />
+                        <div class="bolg-card-text p-5">
+                            <h5 class="all-text-color">MEDIA COVERAGE</h5>
+                            <hr class="blog-card-hr">
+                            <h4 class="fw-bold">5 tips to boost product based sale online</h4>
+                            <p class="all-paragraph-text-color mt-3">There are many variations of passages of lorem
+                                ipsum dolor amet available...</p>
+                            <div class="d-flex mt-5 justify-content-end">
+                                <a href="#" class="fs-5 text-black fw-semibold features-card-link-hover">Continue
+                                    Reading</a>
+                                <i class='bx bx-dots-horizontal-rounded fs-3 mt-3 all-text-color'></i>
+                            </div>
+                        </div>
+                    </div>
+                    </di>
+                </div>
+
+                <div class="col-12 col-lg-4 col-xxl-3 d-flex justify-content-center media-flex-center media-margin-top">
+                    <div class="blog-card">
+                        <img src="./Images/blog-img/post-img1.jpg" class="blog-card-img" alt="Mike" />
+                        <div class="bolg-card-text p-5">
+                            <h5 class="all-text-color">MEDIA COVERAGE</h5>
+                            <hr class="blog-card-hr">
+                            <h4 class="fw-bold">How to become a fully AI based company</h4>
+                            <p class="all-paragraph-text-color mt-3">There are many variations of passages of lorem
+                                ipsum dolor amet available...</p>
+                            <div class="d-flex mt-5 justify-content-end">
+                                <a href="#" class="fs-5 text-black fw-semibold features-card-link-hover">Continue
+                                    Reading</a>
+                                <i class='bx bx-dots-horizontal-rounded fs-3 mt-3 all-text-color'></i>
+                            </div>
+                        </div>
+                    </div>
+                    </di>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5 bg-white text-black" id="contact">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="all-main-text-color">Get in touch</h1>
+                <p class="all-paragraph-text-color fs-5">Contact us</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5 pt-5">
+            <div class="col-12 col-lg-6 col-xxl-4">
+                <img src="./Images/contact-img/contact-img.png" class="contact-img" alt="Mike" />
+            </div>
+
+            <div class="col-12 col-lg-6 col-xxl-4 media-margin-top">
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="john.doe@example.com">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Write Message"></textarea>
+                </div>
+
+                <div class="mt-5">
+                    <button type="button" class="themes-screens-btns">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-cover-img">
+        <div class="container-fluid p-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-3 col-xl-2">
+                    <img src="./Images/Main-Cover-img-Logo/logo-navbar-img.png" class="h-8" alt="Mike" />
+                    <p class="mt-3 mt-3">Lorem ipsum dolor sit amet consect adipiscing elit, sed do eiusmod tempor
+                        incididunt labore at dolore.</p>
+                    <p class="mt-3">© 2020 Saasflix. All rights reserved.</p>
+                </div>
+
+                <div class="col-12 col-lg-3 col-xl-2 media-margin-top">
+                    <h3 class="all-text-color">Company</h3>
+                    <ul class="ps-0 mt-3">
+                        <li class="list-group"><a href="#" class="text-white fs-5">Features</a></li>
+                        <li class="list-group"><a href="#" class="text-white fs-5">Plan</a></li>
+                        <li class="list-group"><a href="#" class="text-white fs-5">Blog</a></li>
+                        <li class="list-group"><a href="#" class="text-white fs-5">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-3 col-xl-2 media-margin-top">
+                    <h3 class="all-text-color">Support</h3>
+                    <ul class="ps-0 mt-3">
+                        <li class="list-group"><a href="#" class="text-white fs-5">Careers</a></li>
+                        <li class="list-group"><a href="#" class="text-white fs-5">Help</a></li>
+                        <li class="list-group"><a href="#" class="text-white fs-5">Privacy Policy</a></li>
+                        <li class="list-group"><a href="#" class="text-white fs-5">Terms</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-3 col-xl-2 media-margin-top">
+                    <h3 class="all-text-color">Newsletter</h3>
+                    <div class="d-flex mt-3">
+                        <input type="email" class="form-control rounded-0" id="exampleFormControlInput1"
+                            placeholder="Email address">
+                    </div>
+                    <div class="mt-3">
+                        <button type="button" class="themes-screens-btns footer-btn-form">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Swiper Js -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <!-- Scroll Down -->
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>

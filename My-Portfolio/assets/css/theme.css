@@ -1,0 +1,153 @@
+/* ===== Portfolio 2027 theme: loads AFTER style.css. Dark = bulb off, Light = bulb on ===== */
+:root{
+  --bg:#0d1017; --bg-2:#141925; --surface:#171c29; --surface-2:#1f2536; --line:rgba(255,255,255,.09);
+  --text:#eef0f6; --muted:#9aa3b8; --accent:#ffb43a; --accent-ink:#1a1100; --glow:rgba(255,180,58,.18);
+  --r-lg:28px; --r-md:18px; --r-sm:10px; --shadow:0 24px 60px -28px rgba(0,0,0,.7);
+  --color-blue-100:var(--accent);
+  color-scheme:dark;
+}
+html[data-theme="light"]{
+  --bg:#eef1f7; --bg-2:#e3e8f2; --surface:#ffffff; --surface-2:#f2f5fb; --line:rgba(16,24,48,.10);
+  --text:#121829; --muted:#566079; --accent:#2f4bff; --accent-ink:#ffffff; --glow:rgba(47,75,255,.14);
+  --shadow:0 24px 60px -30px rgba(30,45,110,.35);
+  color-scheme:light;
+}
+html{scroll-behavior:smooth}
+body{font-family:"Figtree",system-ui,sans-serif;background:var(--bg)!important;color:var(--text);transition:background .5s,color .5s}
+h1,h2,h3,h4,h5,h6,#header h1,.section-title p,.navbar a{font-family:"Bricolage Grotesque","Figtree",sans-serif}
+a{color:var(--accent)} a:hover{color:var(--text)}
+.text-white,.text-white-50,.contact-link-ec{color:var(--text)!important}
+.text-white-50{color:var(--muted)!important}
+::selection{background:var(--accent);color:var(--accent-ink)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* Hero: the name is the design */
+#header h1{font-size:clamp(3.2rem,10vw,6.5rem);font-weight:800;letter-spacing:-.05em;line-height:.92}
+#header h1 a,#header h1 a:hover{color:var(--text)}
+#header h2{color:var(--muted);font-size:clamp(1.5rem,0.2vw,1.6rem);font-weight:500;line-height:1.35}
+#header h2 span{color:var(--text);border-bottom:3px solid var(--accent);padding-bottom:2px}
+#header h2.fs-5 span{border:0}
+#typed{color:var(--accent);border:0!important}
+.wrapper .icon{background:var(--surface);color:var(--text);border:1px solid var(--line);box-shadow:var(--shadow)}
+
+/* Floating nav once a section opens */
+#header.header-top{height:68px;background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+#header.header-top h1{font-size:28px;letter-spacing:-.03em}
+.navbar a,.navbar a:focus{color:var(--muted);font-weight:500}
+.navbar a:hover,.navbar .active{color:var(--text)} 
+.navbar a:before{background:var(--accent);height:3px;border-radius:3px}
+.navbar-mobile{background:color-mix(in srgb,var(--bg) 96%,transparent)}
+.mobile-nav-toggle{color:var(--text)}
+
+/* Section headings */
+.section-title h2{font-size:15px;letter-spacing:0;text-transform:none;font-weight:600;color:var(--accent);line-height:1.2;margin-bottom:6px}
+.section-title h2::after{display:none}
+.section-title p{font-size:clamp(2rem,5vw,3.6rem);text-transform:none;letter-spacing:-.03em;line-height:1.05;margin:0 0 18px;color:var(--text)}
+.section-title h3{color:var(--text);font-weight:600;max-width:55ch}
+.about-me .content h3,.resume .resume-item h4{color:var(--text)}
+.about-me .content p,.resume .resume-item p,.resume .resume-item li,.services .icon-box p{color:var(--muted)!important}
+.about-me .content ul i{color:var(--accent)}
+.about-img-me{border-radius:var(--r-lg);border:1px solid var(--line);box-shadow:var(--shadow)}
+
+/* Cards: three radii on purpose (big photo/cards, medium boxes, small chips) */
+.counts .count-box,.interests .icon-box,.services .icon-box,.contact .info-box,.contact .php-email-form{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--shadow);color:var(--text);transition:transform .35s,background .35s,border-color .35s}
+.counts .count-box i{background:var(--surface-2);color:var(--accent);border-radius:var(--r-md)}
+.counts .count-box span,.counts .count-box p,.contact .info-box p,.contact .info-box h3,.skills .progress .skill,.resume .resume-title{color:var(--text)}
+.contact .info-box i.bx{background:var(--surface-2);color:var(--accent)}
+.contact .info-box .social-links a{color:var(--text)}
+.resume .resume-item h5,.resume .resume-item h5 a{background:var(--surface-2);color:var(--text)!important;border-radius:var(--r-sm)}
+.resume .resume-item::before{background:var(--accent)}
+.skills .progress-bar-wrap{background:var(--surface-2);border-radius:99px;overflow:hidden}
+.skills .progress-bar{background:var(--accent);border-radius:99px}
+.services .icon-box:hover{background:var(--accent);border-color:var(--accent);transform:translateY(-6px)}
+.services .icon-box .icon{background:var(--accent);border-radius:var(--r-md)}
+.services .icon-box .icon i{color:var(--accent-ink)}
+.services .icon-box h4 a{color:var(--text)}
+.services .icon-box:hover h4 a,.services .icon-box:hover p{color:var(--accent-ink)!important}
+.services .icon-box:hover .icon{background:var(--accent-ink)}
+.services .icon-box:hover .icon i{color:var(--accent)}
+.services .icon-box .icon::before{display:none}
+
+/* Portfolio */
+.portfolio #portfolio-flters li{background:var(--surface);color:var(--muted);border:1px solid var(--line);border-radius:99px;font-weight:600}
+.portfolio #portfolio-flters li:hover{color:var(--text)}
+.portfolio #portfolio-flters li.filter-active{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.portfolio .portfolio-wrap{border-radius:var(--r-md);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow)}
+.portfolio .portfolio-wrap .portfolio-links a:hover{color:var(--accent)}
+
+/* Forms & buttons */
+.contact .php-email-form input,.contact .php-email-form textarea{background:var(--surface-2)!important;color:var(--text)!important;border:1px solid var(--line)!important;border-radius:var(--r-sm)}
+.contact .php-email-form input::placeholder,.contact .php-email-form textarea::placeholder{color:var(--muted)}
+.contact .php-email-form button[type=submit]{background:var(--accent)!important;color:var(--accent-ink)!important;border-radius:99px;font-weight:700;padding:12px 32px;border:0}
+.credits{color:var(--muted);pointer-events:none}.credits a{pointer-events:auto}
+@media(max-width:768px){.credits{background:var(--bg)}}
+
+/* ===== Bulb switch (top-right, mini) ===== */
+@property --on{syntax:"<number>";inherits:true;initial-value:0}
+.bulbsw{--on:0;--cord:hsl(220,10%,calc((62 - var(--on)*48)*1%));--stroke:var(--cord);--shine:hsla(0,0%,100%,calc(.7 - var(--on)*.45));
+  --cap:hsl(220,8%,calc((40 + var(--on)*32)*1%));--filament:hsl(40,calc(var(--on)*90%),calc((28 + var(--on)*72)*1%));
+  position:fixed;display: flex;justify-content: center;align-items: center;padding: 7px;top:-6px;right:clamp(14px,3vw,34px);width:54px;z-index:1200;transition:--on .45s;touch-action:none;
+  filter:drop-shadow(0 0 calc(var(--on)*16px) hsla(42,100%,60%,calc(var(--on)*.75)))}
+html[data-theme="light"] .bulbsw{--on:1}
+.bulbsw svg{display:block;width:70%;height:auto;overflow:visible}
+.bulbsw .cord{fill:none;stroke:var(--cord);stroke-width:8;stroke-linecap:round}
+.bulbsw .knob{fill:var(--cord)}
+.bulbsw .hit{fill:transparent;cursor:grab}.bulbsw .hit:active{cursor:grabbing}
+.bulbsw .b-fil{stroke:var(--filament)}.bulbsw .b-shine{stroke:var(--shine)}
+.bulbsw .b-glass{stroke:var(--stroke);fill:hsla(calc(180 - 95*var(--on)),80%,80%,calc(.1 + .4*var(--on)))}
+.bulbsw .b-cap{fill:var(--cap)}.bulbsw .b-capline{stroke:var(--stroke)}
+@media(prefers-reduced-motion:reduce){body,.bulbsw{transition:none}}
+
+/* fixes */
+section,section.section-show{background:transparent!important}
+.section-title{margin-bottom:28px}
+#header.header-top .container{padding-right:88px}
+@media(max-width:991px){#header.header-top .container{padding-right:110px}.mobile-nav-toggle{right:72px}}
+section .container{background:transparent!important}
+
+/* ===== Hero photo: dark = black&white photo, light = colour photo (same full-screen size as before) ===== */
+body::before{background-size:cover!important;background-position:center 0%!important;background-repeat:no-repeat}
+html[data-theme="dark"] body::before,html:not([data-theme]) body::before{
+  background-image:linear-gradient(90deg,rgb(13 16 23/.9) 0%,rgb(13 16 23/.6) 42%,rgb(13 16 23/.12) 100%),url("../img/BG-2.jpeg")!important}
+html[data-theme="light"] body::before{
+  background-image:linear-gradient(90deg,rgb(238 241 247/.95) 0%,rgb(238 241 247/.65) 42%,rgb(238 241 247/.08) 100%),url("../img/BG-light.jpg")!important}
+/* when a section is open the photo stays as a calm backdrop so text is readable */
+html[data-theme="dark"] body:has(#header.header-top)::before{
+  background-image:linear-gradient(rgb(13 16 23/.88),rgb(13 16 23/.9)),url("../img/BG-2.jpeg")!important}
+html[data-theme="light"] body:has(#header.header-top)::before{
+  background-image:linear-gradient(rgb(238 241 247/.9),rgb(238 241 247/.92)),url("../img/BG-light.jpg")!important}
+/* name on two lines so the face on the right stays visible */
+#header:not(.header-top) h1{max-width:7.4em}
+#header:not(.header-top) h2{color:var(--text);opacity:.82}
+html[data-theme="dark"] #header:not(.header-top) h2{text-shadow:0 1px 14px rgb(0 0 0/.6)}
+
+/* Navbar hover/active colour: dark = #e8e8e8, light = #212121 */
+html[data-theme="dark"] .navbar a:hover,
+html[data-theme="dark"] .navbar .active,
+html[data-theme="dark"] .navbar .active:focus,
+html[data-theme="dark"] .navbar li:hover>a {
+  color: #e8e8e8;
+}
+
+html[data-theme="light"] .navbar a:hover,
+html[data-theme="light"] .navbar .active,
+html[data-theme="light"] .navbar .active:focus,
+html[data-theme="light"] .navbar li:hover>a {
+  color: #212121;
+}
+
+/* Resume timeline line: dark = #e8e8e8, light = #212121 */
+html[data-theme="dark"] .resume .resume-item {
+  border-left-color: #e8e8e8;
+}
+
+html[data-theme="light"] .resume .resume-item {
+  border-left-color: #212121;
+}
+
+/* Download CV button */
+.resume-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.cv-btn{display:inline-flex;align-items:center;gap:8px;padding:12px 28px;border-radius:99px;background:var(--accent);color:var(--accent-ink)!important;font-weight:700;font-size:15px;text-decoration:none;margin-bottom:18px;transition:transform .3s,box-shadow .3s}
+.cv-btn:hover{transform:translateY(-3px);box-shadow:0 14px 30px -12px var(--accent)}
+.cv-btn i{font-size:20px}

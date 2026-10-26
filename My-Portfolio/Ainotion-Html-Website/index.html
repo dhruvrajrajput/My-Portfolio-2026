@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ainotion HTML Landing Template</title>
+    <link rel="icon" href="./Images/Logo-img/Letter-A-Logo.jpg">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Box Icons Links -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Navbar script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <!-- Bootstrap Css Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Bootstrap JS Links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- My Css Links -->
+    <link rel="stylesheet" href="./sass/main.css">
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class='bx bx-up-arrow-alt fs-4'></i></button>
+
+    <div class="container">
+        <div class="nav">
+            <img src="./Images/Logo-img/navbar-logo.png" alt="Mike" />
+            <h1><i class='bx bx-menu fs-1'></i></h1>
+            <ul class="menu" id="myDIV">
+                <li><a href="#home" class="color">Home</a></li>
+                <li><a href="#why all">Why All</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button type="button" class="all-themes-btns themes-btns media-display-none">Request a Demo</button>
+        </div>
+        <div class="section pt-5" id="home">
+            <div class="container-fluid p-5">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-6 col-xxl-4">
+                        <h1 class="display-5 fw-semibold media-main-text-size">AI support for you <br />
+                            <span class="all-text-color">On-Demand</span>
+                        </h1>
+
+                        <p class="fs-5 all-paragraph-text media-cover-text-margin-top">Lorem ipsum dolor sit amet
+                            consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt soluta nobis assumenda labore quod maxime dolore magna aliqua.
+                        </p>
+
+                        <div class="mt-3 media-cover-text-margin-top">
+                            <button type="button" class="themes-btns all-themes-btns">Request a Demo</button>
+                            <button type="button" class="main-cover-btn-2"><i class='bx bx-play'></i></button>
+                        </div>
+
+                        <p class="all-paragraph-text mt-3">No credit card required. Cancel anytime.</p>
+                    </div>
+
+                    <div class="col-12 col-lg-6 col-xxl-4 media-flex-center">
+                        <img src="./Images/Logo-img/main-cover-text-img.png" class="main-cover-img-text-img"
+                            alt="Mike" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5 bg-white text-black">
+        <div class="row">
+            <div class="col-12 col-lg-2 media-margin-top media-flex-center">
+                <img src="./Images/Logo-img-text-2/client-1.png" onmouseover="clientimg2(this)" onmouseout="clientimg1(this)" class="swiper-logo-img" alt="Mike" />
+            </div>
+
+            <div class="col-12 col-lg-2 media-margin-top media-flex-center">
+                <img src="./Images/Logo-img-text-2/client-2.png" onmouseover="clientimg2(this)" onmouseout="clientimg1(this)" class="swiper-logo-img" alt="Mike" />
+            </div>
+
+            <div class="col-12 col-lg-2 media-margin-top media-flex-center">
+                <img src="./Images/Logo-img-text-2/client-3.png" onmouseover="clientimg2(this)" onmouseout="clientimg1(this)" class="swiper-logo-img" alt="Mike" />
+            </div>
+
+            <div class="col-12 col-lg-2 media-margin-top media-flex-center">
+                <img src="./Images/Logo-img-text-2/client-4.png" onmouseover="clientimg2(this)" onmouseout="clientimg1(this)" class="swiper-logo-img" alt="Mike" />
+            </div>
+
+            <div class="col-12 col-lg-2 media-margin-top media-flex-center">
+                <img src="./Images/Logo-img-text-2/client-5.png" onmouseover="clientimg2(this)" onmouseout="clientimg1(this)" class="swiper-logo-img" alt="Mike" />
+            </div>
+
+            <div class="col-12 col-lg-2 media-margin-top media-flex-center">
+                <img src="./Images/Logo-img-text-2/client-6.png" onmouseover="clientimg2(this)" onmouseout="clientimg1(this)" class="swiper-logo-img" alt="Mike" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5 bg-white text-black">
+        <div class="row">
+            <div class="col">
+                <h1 class="fw-bold all-main-text-color text-center media-main-text-size-2">Why everyone loves <br />
+                    Ainotion</h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-12 col-lg-4 col-xxl-3">
+                <h1 class="fw-bold"><span class="all-text-color">1.</span> <span
+                        class="all-main-text-color">Radical</span></h1>
+                <p class="all-paragraph-text fst-italic ainotiontext"></p>
+                <img src="./Images/everyone-loves-img/img-1.png" class="everyone-loves-img" alt="Mike" />
+                <p class="all-paragraph-text fs-5 mt-4 everyoneparagraph"></p>
+            </div>
+
+            <div class="col-12 col-lg-4 col-xxl-3 media-margin-top">
+                <h1 class="fw-bold"><span class="all-text-color">2.</span> <span
+                        class="all-main-text-color">Automated</span></h1>
+                <p class="all-paragraph-text fst-italic ainotiontext"></p>
+                <img src="./Images/everyone-loves-img/img-2.png" class="everyone-loves-img" alt="Mike" />
+                <p class="all-paragraph-text fs-5 mt-4 everyoneparagraph"></p>
+            </div>
+
+            <div class="col-12 col-lg-4 col-xxl-3 media-margin-top">
+                <h1 class="fw-bold"><span class="all-text-color">3.</span> <span
+                        class="all-main-text-color">Instant</span></h1>
+                <p class="all-paragraph-text fst-italic ainotiontext"></p>
+                <img src="./Images/everyone-loves-img/img-3.png" class="everyone-loves-img" alt="Mike" />
+                <p class="all-paragraph-text fs-5 mt-4 everyoneparagraph"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="why-cover-img" id="why all">
+        <div class="container-fluid p-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6 col-xxl-4">
+                    <p class="all-paragraph-text fw-semibold">Grow revenue with lower costs</p>
+                    <h3 class="all-main-text-color fw-semibold">AI powered system, that automates support for your
+                        customers and employees.</h3>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xxl-4 media-margin-top">
+                    <button type="button" class="themes-btns all-themes-btns">Request a Demo</button>
+                    <button type="button" class="outlines-btns ms-3">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5 bg-white text-black">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-6 col-xl-5 media-flex-center">
+                <img src="./Images/why-all-img/ai-img1.png" class="main-cover-img-text-img" alt="Mike" />
+            </div>
+
+            <div class="col-12 col-lg-6 col-xl-5 media-margin-top">
+                <h2 class="all-main-text-color fw-bold">Analyze data with built-in digital tools.</h2>
+
+                <p class="all-paragraph-text fs-5 mt-3 dataparagraph"></p>
+
+                <div class="d-flex">
+                    <i class='bx bx-check-circle all-text-color fs-2'></i>
+                    <p class="all-paragraph-text fs-5 ms-2">Lorem ipsum dolor sit amet</p>
+                </div>
+
+                <div class="d-flex">
+                    <i class='bx bx-check-circle all-text-color fs-2'></i>
+                    <p class="all-paragraph-text fs-5 ms-2">Vero facil accusamus dores iusto odio</p>
+                </div>
+
+                <div class="d-flex">
+                    <i class='bx bx-check-circle all-text-color fs-2'></i>
+                    <p class="all-paragraph-text fs-5 ms-2">Optio cumque nihil</p>
+                </div>
+
+                <div class="why-img-1-text">
+                    <a href="#clients" class="text-decoration-none text-white"><span
+                            class="why-img-1-text-2 text-white">REVIEWS</span> VIEW ALL FEEDBACKS</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5" id="about">
+            <div class="col-12 col-lg-6 col-xl-5">
+                <h2 class="all-main-text-color fw-bold">Improve customer satisfaction at all hours.</h2>
+                <p class="all-paragraph-text fs-5 mt-3 dataparagraph"></p>
+
+                <span class="about-text-btn-border text-uppercase">LOREM IPSUM</span>
+                <span class="about-text-btn-border text-uppercase">DOLOR SIT AMET</span>
+                <span class="about-text-btn-border text-uppercase">LOREM IPSUM</span>
+                <span class="about-text-btn-border text-uppercase">DOLOR SIT</span>
+                <span class="about-text-btn-border text-uppercase">LOREM IPSUM</span>
+
+                <div class="mt-2">
+                    <span class="about-text-btn-border text-uppercase">DOLOR SIT AMET</span>
+                    <span class="about-text-btn-border text-uppercase">LOREM IPSUM AMET</span>
+                    <span class="about-text-btn-border text-uppercase">DOLOR SIT</span>
+                    <span class="about-text-btn-border text-uppercase">LOREM AMET IPSUM</span>
+                </div>
+
+                <div class="mt-2">
+                    <span class="about-text-btn-border text-uppercase">DOLOR AMET SIT AMET</span>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 col-xl-5 media-flex-center media-margin-top">
+                <img src="./Images/why-all-img/ai-img2.png" class="main-cover-img-text-img" alt="Mike" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5 bg-white text-black" id="about">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="all-main-text-color fw-semibold media-main-text-size">Our clients love us</h1>
+                <p class="all-paragraph-text fs-5 w-50 m-auto media-text-width media-margin-top">Ainotion has earned 4.9
+                    stars in the aspernatur aut odit
+                    aut fugit,
+                    sed quia consequntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+            </div>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper media-text-padding" id="clients">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="container-fluid p-5">
+                        <div class="row">
+                            <div class="col">
+                                <p class="all-paragraph-text fs-5 swipertext"></p>
+
+                                <div class="d-flex mt-3">
+                                    <img src="./Images/Clients-img/user-1.jpg" alt="Mike" />
+
+                                    <div class="ms-2">
+                                        <h5 class="all-main-text-color">Chris Krammes</h5>
+                                        <p class="all-paragraph-text">CEO, AIone</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="container-fluid p-5">
+                        <div class="row">
+                            <div class="col">
+                                <p class="all-paragraph-text fs-5 swipertext"></p>
+
+                                <div class="d-flex mt-3">
+                                    <img src="./Images/Clients-img/user-2.jpg" alt="Mike" />
+
+                                    <div class="ms-2">
+                                        <h5 class="all-main-text-color">Roslyn Tryniski</h5>
+                                        <p class="all-paragraph-text">Entrepreneur, Denmark</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="container-fluid p-5">
+                        <div class="row">
+                            <div class="col">
+                                <p class="all-paragraph-text fs-5 swipertext"></p>
+
+                                <div class="d-flex mt-3">
+                                    <img src="./Images/Clients-img/user-3.jpg" alt="Mike" />
+
+                                    <div class="ms-2">
+                                        <h5 class="all-main-text-color">Tyrese Harper</h5>
+                                        <p class="all-paragraph-text">CTO, Bigacme</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="container-fluid p-5">
+                        <div class="row">
+                            <div class="col">
+                                <p class="all-paragraph-text fs-5 swipertext"></p>
+
+                                <div class="d-flex mt-3">
+                                    <img src="./Images/Clients-img/user-6.jpg" alt="Mike" />
+
+                                    <div class="ms-2">
+                                        <h5 class="all-main-text-color">Christina Brown</h5>
+                                        <p class="all-paragraph-text">Project Lead</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="container-fluid p-5">
+                        <div class="row">
+                            <div class="col">
+                                <p class="all-paragraph-text fs-5 swipertext"></p>
+
+                                <div class="d-flex mt-3">
+                                    <img src="./Images/Clients-img/user-7.jpg" alt="Mike" />
+
+                                    <div class="ms-2">
+                                        <h5 class="all-main-text-color">Ryan Crawford</h5>
+                                        <p class="all-paragraph-text">Data ANalyst</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="swiper-button-next"></div> -->
+            <!-- <div class="swiper-button-prev"></div> -->
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+
+        <div class="row mt-5">
+            <div class="col text-center">
+                <h4 class="all-text-color ">4.5 out of 5 based on 2450 reviews</h4>
+
+                <div class="mt-3">
+                    <i class='bx bxs-star fs-3 about-star-icons-color'></i>
+                    <i class='bx bxs-star fs-3 about-star-icons-color'></i>
+                    <i class='bx bxs-star fs-3 about-star-icons-color'></i>
+                    <i class='bx bxs-star fs-3 about-star-icons-color'></i>
+                    <i class='bx bxs-star fs-3 about-star-icons-color'></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="features-cover-img" id="features">
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class="col">
+                    <h1 class="all-main-text-color fw-semibold text-center">We’re helping businesses <br /> do their
+                        best work</h1>
+                </div>
+            </div>
+
+            <div class="row mt-5 justify-content-center">
+                <div class="col-12 col-lg-4 col-xxl-3">
+                    <div class="d-flex align-items-center">
+                        <img src="./Images/everyone-loves-img/img-1.png" class="features-cover-img-text-img"
+                            alt="Mike" />
+                        <h4 class="all-main-text-color fw-bold ms-3">Instantly Transparent</h4>
+                    </div>
+
+                    <p class="all-paragraph-text fs-5 mt-3 businessesparagraph"></p>
+                </div>
+
+                <div class="col-12 col-lg-4 col-xxl-3">
+                    <div class="d-flex align-items-center">
+                        <img src="./Images/everyone-loves-img/icon-small2.png" class="features-cover-img-text-img"
+                            alt="Mike" />
+                        <h4 class="all-main-text-color fw-bold ms-3">Shared Insights on data</h4>
+                    </div>
+
+                    <p class="all-paragraph-text fs-5 mt-3 businessesparagraph"></p>
+                </div>
+
+                <div class="col-12 col-lg-4 col-xxl-3">
+                    <div class="d-flex align-items-center">
+                        <img src="./Images/everyone-loves-img/icon-small3.png" class="features-cover-img-text-img"
+                            alt="Mike" />
+                        <h4 class="all-main-text-color fw-bold ms-3">Radically Effieient & Focused</h4>
+                    </div>
+
+                    <p class="all-paragraph-text fs-5 mt-3 businessesparagraph"></p>
+                </div>
+            </div>
+
+            <div class="row mt-5 justify-content-center">
+                <div class="col-12 col-lg-4 col-xxl-3">
+                    <div class="d-flex align-items-center">
+                        <img src="./Images/everyone-loves-img/icon-small4.png" class="features-cover-img-text-img"
+                            alt="Mike" />
+                        <h4 class="all-main-text-color fw-bold ms-3">Automated Support</h4>
+                    </div>
+
+                    <p class="all-paragraph-text fs-5 mt-3 businessesparagraph"></p>
+                </div>
+
+                <div class="col-12 col-lg-4 col-xxl-3">
+                    <div class="d-flex align-items-center">
+                        <img src="./Images/everyone-loves-img/icon-small5.png" class="features-cover-img-text-img"
+                            alt="Mike" />
+                        <h4 class="all-main-text-color fw-bold ms-3">Streamlined Process</h4>
+                    </div>
+
+                    <p class="all-paragraph-text fs-5 mt-3 businessesparagraph"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5 bg-white text-black" id="pricing">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="all-main-text-color fw-semibold media-main-text-size">Plans & Pricing</h1>
+                <p class="all-paragraph-text w-50 m-auto media-text-width media-cover-text-margin-top">Excepteur
+                    sint occaec cupidatat non proident suntin culpa qui officia deserunt mollit anim idiu siame namlon
+                    est laborum</p>
+            </div>
+        </div>
+
+        <ul class="nav nav-pills mb-3 justify-content-center mt-5" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Monthly</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Yearly</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                tabindex="0">
+                <div class="container-fluid p-5">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-4 col-xl-4 d-flex justify-content-center media-flex-center">
+                            <div class="pricing-card">
+                                <h3 class="all-main-text-color">Silver Package</h3>
+                                <h1 class="all-text-color mt-4"><sub class="fs-5 pricing-card-text-dollar">$</sub>99
+                                </h1>
+
+                                <ul class="fs-5 all-paragraph-text ps-0 mt-4">
+                                    <li class="list-group-item">Organisational Workflow</li>
+                                    <li class="list-group-item mt-2">Built-in Modules</li>
+                                    <li class="list-group-item mt-2">Connect From Anywhere</li>
+                                    <li class="list-group-item mt-2">Instant Access</li>
+                                </ul>
+
+                                <button type="button" onclick="plans()" class="outlines-btns mt-4">Start Now</button>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-4 col-xl-4 d-flex justify-content-center media-flex-center media-margin-top">
+                            <div class="pricing-card-2">
+                                <h3 class="all-main-text-color">Gold Package</h3>
+                                <h1 class="all-text-color mt-4"><sub class="fs-5 pricing-card-text-dollar">$</sub>199
+                                </h1>
+
+                                <ul class="fs-5 all-paragraph-text ps-0 mt-4">
+                                    <li class="list-group-item">Organisational Workflow</li>
+                                    <li class="list-group-item mt-2">Built-in Modules</li>
+                                    <li class="list-group-item mt-2">Connect From Anywhere</li>
+                                    <li class="list-group-item mt-2">Instant Access</li>
+                                </ul>
+
+                                <button type="button" onclick="plans()" class="themes-btns all-themes-btns mt-4">Start Now</button>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-4 col-xl-4 d-flex justify-content-center media-flex-center media-margin-top">
+                            <div class="pricing-card">
+                                <h3 class="all-main-text-color">Platinum Package</h3>
+                                <h1 class="all-text-color mt-4"><sub
+                                        class="fs-5 pricing-card-text-dollar">$</sub>299<sub class="fs-5">/mo</sub></h1>
+
+                                <ul class="fs-5 all-paragraph-text ps-0 mt-4">
+                                    <li class="list-group-item">Organisational Workflow</li>
+                                    <li class="list-group-item mt-2">Built-in Modules</li>
+                                    <li class="list-group-item mt-2">Connect From Anywhere</li>
+                                    <li class="list-group-item mt-2">Instant Access</li>
+                                </ul>
+
+                                <button type="button" onclick="plans()" class="outlines-btns mt-4">Start Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                tabindex="0">
+                <div class="container-fluid p-5">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-4 col-xl-4 d-flex justify-content-center media-flex-center">
+                            <div class="pricing-card">
+                                <h3 class="all-main-text-color">Silver Package</h3>
+                                <h1 class="all-text-color mt-4"><sub class="fs-5 pricing-card-text-dollar">$</sub>599
+                                </h1>
+
+                                <ul class="fs-5 all-paragraph-text ps-0 mt-4">
+                                    <li class="list-group-item">1 Hour Photography</li>
+                                    <li class="list-group-item mt-2">60 - 100 images / shoot</li>
+                                    <li class="list-group-item mt-2">Password protected gallery on</li>
+                                    <li class="list-group-item mt-2">personalized website</li>
+                                </ul>
+
+                                <button type="button" class="outlines-btns mt-4">Start Now</button>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-4 col-xl-4 d-flex justify-content-center media-flex-center media-margin-top">
+                            <div class="pricing-card-2">
+                                <h3 class="all-main-text-color">Gold Package</h3>
+                                <h1 class="all-text-color mt-4"><sub class="fs-5 pricing-card-text-dollar">$</sub>999
+                                </h1>
+
+                                <ul class="fs-5 all-paragraph-text ps-0 mt-4">
+                                    <li class="list-group-item">5 Hour Photography</li>
+                                    <li class="list-group-item mt-2">100 - 200 images / shoot</li>
+                                    <li class="list-group-item mt-2">Password protected gallery on</li>
+                                    <li class="list-group-item mt-2">personalized website</li>
+                                </ul>
+
+                                <button type="button" class="themes-btns all-themes-btns mt-4">Start Now</button>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-4 col-xl-4 d-flex justify-content-center media-flex-center media-margin-top">
+                            <div class="pricing-card">
+                                <h3 class="all-main-text-color">Platinum Package</h3>
+                                <h1 class="all-text-color mt-4"><sub
+                                        class="fs-5 pricing-card-text-dollar">$</sub>799<sub class="fs-5">/mo</sub></h1>
+
+                                <ul class="fs-5 all-paragraph-text ps-0 mt-4">
+                                    <li class="list-group-item">100 Addons</li>
+                                    <li class="list-group-item mt-2">Personal lorem ipsum</li>
+                                    <li class="list-group-item mt-2">Bot Setup Extra</li>
+                                    <li class="list-group-item mt-2">$4/extra chat</li>
+                                </ul>
+
+                                <button type="button" class="outlines-btns mt-4">Start Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5 bg-white text-black" id="pricing">
+        <div class="row">
+            <div class="col">
+                <h2 class="all-main-text-color fw-bold text-center">Frequently Asked Questions</h2>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-12 col-lg-6 col-xxl-4">
+                <div class="d-flex all-text-color">
+                    <i class='bx bx-help-circle fs-3'></i>
+                    <h5 class="ms-2">Can I integrate my enterprise software with Ainotion?</h5>
+                </div>
+                <p class="fs-5 all-paragraph-text mt-2">There are many variations of passages of Lorem Ipsum available
+                    in some form, by injected humour. There are many variations of passages of Lorem Ipsum available in
+                    some form, by injected humour.</p>
+
+                <div class="d-flex all-text-color mt-5">
+                    <i class='bx bx-help-circle fs-3'></i>
+                    <h5 class="ms-2">If I invite my customers to Ainotion?</h5>
+                </div>
+                <p class="fs-5 all-paragraph-text mt-2">It was popularised in the 1960s with the release of Letraset
+                    sheets containing Lorem Ipsum passages.</p>
+
+                <div class="d-flex all-text-color mt-5">
+                    <i class='bx bx-help-circle fs-3'></i>
+                    <h5 class="ms-2">What perks do I get for prepaying my subscription?</h5>
+                </div>
+                <p class="fs-5 all-paragraph-text mt-2">Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                    nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+            </div>
+
+            <div class="col-12 col-lg-6 col-xxl-4 media-cover-text-margin-top">
+                <div class="d-flex all-text-color">
+                    <i class='bx bx-help-circle fs-3'></i>
+                    <h5 class="ms-2">Can I install Saasflix on my own hardware?</h5>
+                </div>
+                <p class="fs-5 all-paragraph-text mt-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    accusantium doloremque. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                    doloremque.</p>
+
+                <div class="d-flex all-text-color mt-5">
+                    <i class='bx bx-help-circle fs-3'></i>
+                    <h5 class="ms-2">How can I obtain a copy of my data?</h5>
+                </div>
+                <p class="fs-5 all-paragraph-text mt-2">There are many variations of passages of but the majority have
+                    suffered alteration in injected humour.</p>
+
+                <div class="d-flex all-text-color mt-5">
+                    <i class='bx bx-help-circle fs-3'></i>
+                    <h5 class="ms-2">How safe is my data?</h5>
+                </div>
+                <p class="fs-5 all-paragraph-text mt-2">Nor again is there anyone because it is pain, but because
+                    occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="illustration-cover-img" id="pricing">
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class="col">
+                    <h1 class="all-main-text-color fw-semibold text-center media-main-text-size-2">Get started in <span
+                            class="all-text-color">3 easy steps</span></h1>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-5">
+                <div class="col-12 col-lg-2">
+                    <div class="illustration-text-number text-center">
+                        <h4>1</h4>
+                    </div>
+                    <h6 class="all-main-text-color fw-bold mt-2 text-center">Lorem ipsum dolor <br /> sit amet</h6>
+                </div>
+
+                <div class="col-12 col-lg-2 media-margin-top">
+                    <div class="illustration-text-number">
+                        <h4>2</h4>
+                    </div>
+                    <h6 class="all-main-text-color fw-bold mt-2 text-center">Eiusmo tempo inci <br /> labore dolore</h6>
+                </div>
+
+                <div class="col-12 col-lg-2 media-margin-top">
+                    <div class="illustration-text-number">
+                        <h4>3</h4>
+                    </div>
+                    <h6 class="all-main-text-color fw-bold mt-2 text-center">Quis nostag exercice <br /> tio susipit
+                    </h6>
+                </div>
+            </div>
+
+            <div class="align-items-center justify-content-center d-flex mt-5">
+                <button type="button" class="themes-btns all-themes-btns"><i class='bx bx-play-circle'></i> See how it
+                    works</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5 bg-white text-black" id="pricing">
+        <div class="row">
+            <div class="col">
+                <h1 class="all-main-text-color fw-semibold text-center media-main-text-size">News & Articles</h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-12 col-lg-4 col-xxl-3 media-flex-center">
+                <div class="card news-card-text" style="width: 22rem;">
+                    <img src="./Images/news-img/blogpost-img1.jpg" class="card-img-top news-main-img" alt="Mike" />
+                    <div class="card-body p-4">
+                        <h6 class="card-title all-text-color">MARKETING</h6>
+                        <h5 class="all-main-text-color pt-3">Why we started Ainotion for small agencies</h5>
+
+                        <div class="d-flex align-items-center pt-3">
+                            <img src="./Images/news-img/blogpost-img1-1.jpg" class="news-img" alt="Mike" />
+
+                            <div class="ms-3">
+                                <p class="all-paragraph-text mb-0">MARCH 2020</p>
+                                <p class="all-paragraph-text mb-0">BY CHRISTIAN BROWN</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 col-xxl-3 media-flex-center media-margin-top">
+                <div class="card news-card-text" style="width: 22rem;">
+                    <img src="./Images/news-img/blogpost-img2.jpg" class="card-img-top news-main-img" alt="Mike" />
+                    <div class="card-body p-4">
+                        <h6 class="card-title all-text-color">ANALYTICS</h6>
+                        <h5 class="all-main-text-color pt-3">Essential tips to leveraging in AI system</h5>
+
+                        <div class="d-flex align-items-center pt-3">
+                            <img src="./Images/news-img/blogpost-img2-2.jpg" class="news-img" alt="Mike" />
+
+                            <div class="ms-3">
+                                <p class="all-paragraph-text mb-0">AUGUST 2020</p>
+                                <p class="all-paragraph-text mb-0">BY DAKOTA CAREY</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 col-xxl-3 media-flex-center media-margin-top">
+                <div class="card news-card-text" style="width: 22rem;">
+                    <img src="./Images/news-img/blogpost-img3.jpg" class="card-img-top news-main-img" alt="Mike" />
+                    <div class="card-body p-4">
+                        <h6 class="card-title all-text-color">PLATFORM</h6>
+                        <h5 class="all-main-text-color pt-3">Get the most out of support workflow</h5>
+
+                        <div class="d-flex align-items-center pt-3">
+                            <img src="./Images/news-img/blogpost-img3-3.jpg" class="news-img" alt="Mike" />
+
+                            <div class="ms-3">
+                                <p class="all-paragraph-text mb-0">NOVEMBER 2020</p>
+                                <p class="all-paragraph-text mb-0">BY VICTORIA MORGAN</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-cover-img-1" id="contact">
+        <div class="contact-cover-img-2">
+            <div class="container-fluid p-5">
+                <div class="row">
+                    <div class="col text-center">
+                        <h1 class="text-white media-main-text-size">Make Your Competitive Advantage</h1>
+                        <p class="text-white fs-5 w-50 m-auto media-margin-top media-text-width">There are many
+                            variations of passages of lorem ipsum
+                            <br /> available in some form
+                        </p>
+
+                        <div class="contact-forms-card mt-5">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+
+                            <div class="row flex-direction media-cover-text-margin-top">
+                                <div class="col">
+                                    <input type="text" class="form-control p-3" placeholder="First name"
+                                        aria-label="Name">
+                                </div>
+                                <div class="col media-cover-text-margin-top">
+                                    <input type="text" class="form-control p-3" placeholder="Last name"
+                                        aria-label="Company Name">
+                                </div>
+                            </div>
+
+                            <div class="row mt-3 flex-direction media-cover-text-margin-top">
+                                <div class="col">
+                                    <input type="text" class="form-control p-3" placeholder="First name"
+                                        aria-label="Phone Number">
+                                </div>
+                                <div class="col media-cover-text-margin-top">
+                                    <select class="form-select p-3" aria-label="Default select example">
+                                        <option selected>No. of Employees</option>
+                                        <option value="1">5 - 10</option>
+                                        <option value="2">10 - 25</option>
+                                        <option value="3">more than 25</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-floating mt-3">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Comments</label>
+                            </div>
+
+                            <div class="mt-5">
+                                <button type="button" class="themes-btns all-themes-btns">Request a Demo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer-bg-color p-5" id="contact">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-3 col-xxl-2">
+                <img src="./Images/Logo-img/logo-light.png" class="footer-img" alt="Mike" />
+                <p class="mt-3">Get AI-assisted services for
+                    <br /> smooth workflow.
+                </p>
+                <p class="mt-4">© 2020 Ainotion by Tansh</p>
+
+                <div class="mt-4">
+                    <i class='bx bxl-twitter fs-3'></i>
+                    <i class='bx bxl-facebook fs-3 ms-2'></i>
+                    <i class='bx bxl-google fs-3 ms-2'></i>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3 col-xxl-2 media-margin-top">
+                <h4 class="text-white fw-bold">Quick Links</h4>
+                <ul class="ps-0">
+                    <li class="list-group-item"><a href="#" class="text-decoration-none footer-bg-text">Features</a>
+                    </li>
+                    <li class="list-group-item"><a href="#" class="text-decoration-none footer-bg-text">Pricing</a></li>
+                    <li class="list-group-item"><a href="#" class="text-decoration-none footer-bg-text">Use Cases</a>
+                    </li>
+                    <li class="list-group-item"><a href="#" class="text-decoration-none footer-bg-text">Integrations</a>
+                    </li>
+                    <li class="list-group-item"><a href="#" class="text-decoration-none footer-bg-text">Ainotion API</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-lg-3 col-xxl-2 media-margin-top">
+                <h4 class="text-white fw-bold">Company</h4>
+                <ul class="ps-0">
+                    <li class="list-group-item"><a href="#" class="text-decoration-none footer-bg-text">About Us</a>
+                    </li>
+                    <li class="list-group-item"><a href="#" class="text-decoration-none footer-bg-text">Our Team</a>
+                    </li>
+                    <li class="list-group-item"><a href="#" class="text-decoration-none footer-bg-text">Use Cases</a>
+                    </li>
+                    <li class="list-group-item"><a href="#" class="text-decoration-none footer-bg-text">news &
+                            Articles</a></li>
+                    <li class="list-group-item"><a href="#" class="text-decoration-none footer-bg-text">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-lg-3 col-xxl-2 media-margin-top">
+                <h4 class="text-white fw-bold">Contact Us</h4>
+                <p class="mt-3">3245 East Creek Blvd, Suite <br /> 590, Bos Boomer, AU 20076</p>
+
+                <div class="d-flex align-items-center">
+                    <i class='bx bx-envelope fs-3'></i>
+                    <a href="#" class="text-decoration-none ms-2 footer-bg-text">sayhello@example.com</a>
+                </div>
+
+                <div class="d-flex mt-3">
+                    <i class='bx bx-phone fs-3'></i>
+                    <p class="ms-2 mb-0">90 1234 56 78</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- My JS Links -->
+    <script src="Aninotion.js"></script>
+</body>
+
+</html>

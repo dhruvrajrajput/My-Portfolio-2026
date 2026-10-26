@@ -1,0 +1,572 @@
+:root {
+  --color-dark-100: hsla(210, 100%, 12%, 1);
+  --color-screen-100: hsla(161, 85%, 35%, 1);
+  --color-light-screen-100: hsla(160, 46%, 80%, 1);
+  --color-screen-300: hsla(162, 73%, 40%, 1);
+  --color-white-100: hsla(0, 0%, 100%, 1);
+  --color-light-100: hsla(186, 56%, 96%, 1);
+  --color-gray-100: hsla(213, 19%, 34%, 1);
+  --color-twitter-100: hsla(196, 100%, 43%, 1);
+  --color-google-100: hsla(5, 81%, 56%, 1);
+
+  --box-shadow-small: 0 2px 40px 0 hsl(0deg 0% 6% / 5%);
+}
+
+// Navbar
+@import url(https://unpkg.com/@webpixels/css@1.0/dist/index.css);
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--color-dark-100);
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.navbar-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 111111;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: var(--color-screen-100);
+}
+
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--color-screen-100);
+}
+
+.navbar {
+  box-shadow: var(--box-shadow-small);
+}
+
+// outline btn
+@mixin outline-btn(
+  $outline-btn-bg: var(--color-white-100),
+  $outline-btn-color: var(--color-screen-100),
+  $outline-border: 1px solid var(--color-screen-100),
+  $outline-btn-padding: 13px 50px 12px 50px,
+  $outline-btn-cursor: pointer,
+  $outline-btn-transition: all 0.3s linear,
+  $outline-btn-weight: 600
+) {
+  background-color: $outline-btn-bg;
+  color: $outline-btn-color;
+  border: $outline-border;
+  cursor: $outline-btn-cursor;
+  padding: $outline-btn-padding;
+  transition: $outline-btn-transition;
+  font-weight: $outline-btn-weight;
+
+  &:hover {
+    background-color: var(--color-dark-100);
+    color: var(--color-white-100);
+  }
+}
+
+.outlines-btns {
+  @include outline-btn;
+}
+
+// Themes Btns
+@mixin theme-btn(
+  $theme-btn-bg: var(--color-dark-100),
+  $theme-btn-color: var(--color-white-100),
+  $theme-btn-padding: 15px 40px,
+  $theme-btn-cursor: pointer,
+  $theme-btn-border: 1px solid var(--color-dark-100),
+  $theme-btn-transition: all 0.3s linear,
+  $theme-btn-weight: 600,
+  $theme-btn-size: 16px
+) {
+  background-color: $theme-btn-bg;
+  color: $theme-btn-color;
+  border: $theme-btn-border;
+  cursor: $theme-btn-cursor;
+  transition: $theme-btn-transition;
+  padding: $theme-btn-padding;
+  font-weight: $theme-btn-weight;
+  font-size: $theme-btn-size;
+
+  &:hover {
+    background-color: var(--color-screen-100);
+    border: 1px solid var(--color-screen-100);
+  }
+}
+
+.themes-btns {
+  @include theme-btn;
+}
+
+// Main Cover Img
+.main-cover-img {
+  background-image: url("./images/Main-Cover-Img/landing2-hero.svg");
+  background-color: var(--color-light-100);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.main-cover-img-2 {
+  width: 1110px;
+  height: 676.25px;
+}
+
+// All Text color
+.all-main-text-color {
+  color: var(--color-dark-100);
+}
+
+.all-text-color {
+  color: var(--color-screen-100);
+}
+
+.all-paragraph-text-color {
+  color: var(--color-gray-100);
+}
+
+// Spacer height
+.spacer-100 {
+  height: 150px;
+}
+
+// theme-btn-screen
+@mixin theme-btn-screen(
+  $theme-btn-screen-bg: var(--color-screen-100),
+  $theme-btn-screen-color: var(--color-white-100),
+  $theme-btn-screen-border: 1px solid var(--color-screen-100),
+  $theme-btn-screen-padding: 15px 40px,
+  $theme-btn-screen-cursor: pointer,
+  $theme-btn-screen-transition: all 0.3s linear,
+  $theme-btn-screen-size: 16px,
+  $theme-btn-screen-weight: 600
+) {
+  background-color: $theme-btn-screen-bg;
+  border: $theme-btn-screen-border;
+  color: $theme-btn-screen-color;
+  cursor: $theme-btn-screen-cursor;
+  padding: $theme-btn-screen-padding;
+  font-size: $theme-btn-screen-size;
+  transition: $theme-btn-screen-transition;
+  font-weight: $theme-btn-screen-weight;
+
+  &:hover {
+    background-color: var(--color-dark-100);
+    border: 1px solid var(--color-dark-100);
+  }
+}
+
+.themes-screens-btns {
+  @include theme-btn-screen;
+}
+
+// features text img
+.features-img-1 {
+  width: 511px;
+  height: 416px;
+}
+
+.features-cover-img {
+  background-image: url("./images/features-img/features-cover-img.png");
+  background-color: var(--color-light-100);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features-card-logo-img {
+  width: 92px;
+  height: 80px;
+}
+
+a {
+  color: var(--color-screen-100);
+  position: relative;
+  text-decoration: none;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: var(--color-screen-100);
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.features-card-link-hover:hover {
+  color: var(--color-screen-100) !important;
+}
+
+.features-main-card {
+  box-shadow: 0px 10px 30px -5px rgb(0 0 0 / 10%);
+  height: 400.859px;
+  width: 362px;
+  border-radius: 20px;
+}
+
+.features-card-link-margin-top {
+  margin-top: 30px !important;
+}
+
+// why is sassflix
+.why-is-bg-light-screen {
+  background-color: var(--color-light-screen-100);
+  padding: 5px;
+  border-radius: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-is-bg-screen {
+  background-color: var(--color-screen-100);
+  padding: 10px;
+  color: var(--color-white-100);
+  border-radius: 50px;
+  border: 1px solid var(--color-white-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-is-img-position {
+  position: relative;
+}
+
+.why-is-video-bg-img {
+  width: 635px;
+  height: 331.703px;
+}
+
+.why-is-img-absolute {
+  position: absolute;
+  top: 40%;
+  left: 41%;
+  background-color: var(--color-screen-100);
+  width: 100px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-is-video-bg-img-border {
+  width: 80px;
+  height: 60px;
+  border: 2px solid var(--color-light-screen-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    border: none;
+  }
+}
+
+// Plan Text Bg Color
+.plan-cover-img {
+  background-image: url("./images/Main-Cover-Img/plans-cover-img.png");
+  background-color: var(--color-light-100);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 950px;
+  display: flex;
+  align-items: center;
+}
+
+.plan-card-1 {
+  padding: 40px 30px;
+  background-color: var(--color-light-screen-100);
+  width: 365px;
+  height: 697.156px;
+}
+
+.plan-card-2 {
+  padding: 40px 30px;
+  background-color: var(--color-dark-100);
+  width: 365px;
+  height: 697.156px;
+}
+
+.plan-card-2-popular {
+  position: relative;
+  z-index: 9;
+  top: -40px;
+}
+
+.plan-card-2-popular::after {
+  width: 190px;
+  height: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-top: 30px solid #b6e4d5;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.plan-card-img {
+  width: 113px;
+  height: 105px;
+}
+
+.plan-card-sub {
+  font-size: 34px;
+  line-height: 50px;
+  font-weight: 600;
+  top: -14px;
+}
+
+// faq text bg color
+.faq-card-bg {
+  background-color: var(--color-white-100);
+  padding: 60px 50px;
+  box-shadow: var(--box-shadow-small);
+  border-radius: 20px;
+  width: 1110px;
+  margin: auto;
+}
+
+.faq-card-img {
+  width: 445px;
+  height: 275.656px;
+}
+
+// team text color bg
+.team-cover-img {
+  background-image: url("./images/features-img/features-cover-img.png");
+  background-color: var(--color-light-100);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 750px;
+  display: flex;
+  align-items: center;
+}
+
+.team-main-card {
+  background-color: var(--color-white-100);
+  box-shadow: var(--box-shadow-small);
+  width: 350px;
+  height: 510.03px;
+  position: relative;
+}
+
+.team-card-icons {
+  position: absolute;
+  left: 36%;
+  top: 64%;
+}
+
+.bxl-twitter {
+  background-color: var(--color-twitter-100);
+  border-radius: 50px;
+  padding: 10px;
+
+  &:hover {
+    background-color: var(--color-dark-100);
+    color: var(--color-white-100);
+  }
+}
+
+.bxl-google {
+  background-color: var(--color-google-100);
+  border-radius: 50px;
+  padding: 10px;
+
+  &:hover {
+    background-color: var(--color-dark-100);
+    color: var(--color-white-100);
+  }
+}
+
+// work text bg color
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  border: 2px solid var(--color-screen-100);
+  background-color: transparent;
+}
+
+// Swiper text color bg
+.swiper-bg {
+  background-color: var(--color-screen-300);
+  color: var(--color-white-100);
+}
+
+// Swiper Style
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// blog text color bg
+.blog-main-cover-img {
+  background-image: url("./images/Main-Cover-Img/plans-cover-img.png");
+  background-color: var(--color-light-100);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 850px;
+  display: flex;
+  align-items: center;
+}
+
+.blog-card {
+  background-color: var(--color-white-100);
+  box-shadow: var(--box-shadow-small);
+  width: 350px;
+  height: 570.562px;
+}
+
+.blog-card-img {
+  width: 350px;
+  height: 262.5px;
+}
+
+.blog-card-hr {
+  width: 15%;
+  border: 1px solid var(--color-screen-100);
+  margin-top: 3px;
+}
+
+// contact text color bg
+.contact-img {
+  width: 350px;
+  height: 347px;
+}
+
+// Footer img text color bg
+.footer-cover-img {
+  background-image: url("./images/Main-Cover-Img/footer-bg.png");
+  background-color: var(--color-dark-100);
+  color: var(--color-white-100);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  display: flex;
+  align-items: center;
+}
+
+// Scroll Down
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--color-screen-100);
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50px;
+  transition: all 0.3s linear;
+}
+
+#myBtn:hover {
+  background-color: var(--color-dark-100);
+}
+
+// media Screen
+@media screen and (max-width: 1024px) {
+  .flex-direction {
+    flex-direction: column;
+  }
+  .media-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .media-width {
+    width: auto !important;
+  }
+
+  .main-cover-img-2 {
+    height: 370.25px;
+  }
+
+  .main-cover-img {
+    height: 76vh;
+  }
+
+  .media-margin-top {
+    margin-top: 30px !important;
+  }
+
+  .features-cover-img {
+    height: 1400px;
+  }
+
+  .plan-cover-img {
+    height: 2400px;
+  }
+
+  .team-cover-img {
+    height: 1800px;
+  }
+
+  .faq-card-bg {
+    width: 450px;
+  }
+
+  .blog-main-cover-img {
+    height: 2000px;
+  }
+
+  .footer-cover-img {
+    height: 900px;
+  }
+}
+
+@media screen and (max-width: 1900px) {
+  .spacer-100 {
+    height: 550px;
+  }
+}
